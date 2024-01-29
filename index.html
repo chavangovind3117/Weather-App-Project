@@ -12,13 +12,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/5bf3afebb7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="container">
+
+
+    <div class="tinted overlay"></div>
+
+    <div class="sky">
+        <div class="stars star1"></div>
+        <div class="stars star2"></div>
+        <div class="stars star3"></div>
+        <div class="stars star4"></div>
+        <div class="stars star5"></div>
+    </div>
+
+    <div class="wrapper ">
+
+        <div class="container ">
+
             <div class="heading">
                 <h1>Weather App</h1>
+            </div>
+
+            <!-- Error Container -->
+            <div class="sub-container error-container">
+
+                <div class="errorNumber">
+                    <h1>4<span>
+                            <i class="fa-solid fa-ghost"
+                                style="color: #528cce; animation: spooky 2s alternate infinite linear; font-size: 11rem;">
+                            </i>
+                        </span>4
+                    </h1>
+                    <!-- <img src="./assets/goa.jpg" alt="not-found-png" data-notFound> -->
+                </div>
+                <h2>Error: 404 page not found</h2>
+                <p>Sorry, the page you're looking for cannot be accessed</p>
+                <button type="button" class="btn btn-default button-glow" data-error-btn>Retry</button>
             </div>
 
             <div class="tab-container">
@@ -43,11 +75,10 @@
                     </button>
                 </form>
 
-                <!-- Error Container -->
-                <div class="sub-container error-container">
-                    <img src="./assets/not-found.png" alt="not-found-png" data-notFound>
-                    <p data-error-para class="btn">City Not Found..! please Try another one..!</p>
-                    <button type="button" class="btn btn-default button-glow" data-error-btn>Retry</button>
+                <!-- Offline Status container -->
+                <div class="status">
+                    <p>Please check your Internet </p>
+                    <p>Connectivity</p>
                 </div>
 
                 <!--- loading screen container -->
